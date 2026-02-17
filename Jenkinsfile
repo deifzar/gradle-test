@@ -1,6 +1,6 @@
 @Library('devops-pipeline-libraries') _
 
-gradlePipeline {
+gradleAndroidPipeline {
   environment             = 'dev'
   repoName                = 'gradle-test'
   scmProvider             = 'gitlab' // 'github' or 'gitlab'
@@ -11,7 +11,7 @@ gradlePipeline {
   runSBOM                 = true
   runDeployment           = true
   
-  buildingImage           = 'gradle:8.5-jdk21'
+  buildingImage           = 'cimg/android:2024.01'
 
   scaSeverity             = 'CRITICAL,HIGH'
   trivySkipDirs           = []
