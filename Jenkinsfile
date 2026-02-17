@@ -11,7 +11,7 @@ gradleAndroidPipeline {
   runSBOM                 = true
   runDeployment           = true
   
-  buildingImage           = 'cimg/android:2024.01'
+  buildingImage           = 'thyrlian/android-sdk:latest'
 
   scaSeverity             = 'CRITICAL,HIGH'
   trivySkipDirs           = []
